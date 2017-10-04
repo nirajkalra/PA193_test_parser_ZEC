@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-	std::cout << "hello !! first test parser update\n\n";
+	std::cout << "hello !! first test parser update\n\n Chinatn amended its";
 	return 0;
 }
 
