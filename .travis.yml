@@ -1,0 +1,3 @@
+language: cpp
+script: make
+ignore: test_parser_zcash/*
