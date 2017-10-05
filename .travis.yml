@@ -1,2 +1,2 @@
 language: cpp
-script: make
+solution: test_parser_zcash.sln
