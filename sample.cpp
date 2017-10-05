@@ -4,7 +4,7 @@
 int main()
 {
  
- char *teststr = { 'c', 'k'};
+ char teststr[] = { 'c', 'k'};
   std::cout << "Hello World!" << std::endl;
   return 0;
 }
