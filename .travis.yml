@@ -1,2 +1,4 @@
 language: cpp
 solution: test_parser_zcash.sln
+script:
+  - xbuild /p:Configuration=Release test_parser_zcash.sln
