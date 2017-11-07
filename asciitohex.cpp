@@ -1,5 +1,4 @@
-int ascii_to_hex(char c)
-{
+int ascii_to_hex(char c){
 	int num = (int)c;
 	if (num > 47 && num < 58)
 	{
