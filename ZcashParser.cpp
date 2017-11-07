@@ -82,7 +82,7 @@ int main()
 	int fpos = 0;
 	int bytestoread;
 	struct ZBLOCK  zblock;// = (struct ZBLOCK*) malloc(sizeof(struct ZBLOCK));
-	FILE *inifile = fopen("185101.dat", "rb");
+	FILE *inifile = fopen("blk00041_185102.dat", "rb");
 	FILE *zblockfile = fopen("blknew.bin", "wb");
 	int num;
 	char temp;
