@@ -81,6 +81,7 @@ int main()
 	//lOCAL vARIABLES
 	int fpos = 0,size_block=0;
 	int bytestoread;
+	unsigned char zversion[4]={0x00,0x00,0x00,0x04};
 	struct ZBLOCK  zblock;// = (struct ZBLOCK*) malloc(sizeof(struct ZBLOCK));
 	FILE *inifile = fopen("blk00041_185102.dat", "rb");
 	fseek(inifile, 0L, SEEK_END);  // to check the input legnth of file
@@ -140,6 +141,14 @@ int main()
 	bytestoread = 4;
 	readfile(zblockfile, fpos, bytestoread, LITTLEENDIAN, buffer);
 	fillbuffer((zblock).version,buffer,bytestoread );
+	int i;
+	for (i=0;i<4;i++)  // checking for version
+		if(zblock.version[i]!=zversion[i])
+		{
+			printf("\n Invalid Block \n");
+			exit(-1);
+		}
+	
 	fpos = fpos + bytestoread*2;  // multiply *2 since two nibbles are read as one byte
 	memset(buffer, 0, 60);
 
