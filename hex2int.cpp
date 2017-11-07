@@ -2,7 +2,7 @@ long hex2int(char *a, int len)
 {
 	unsigned char c1, c2;
 	int i;
-	//unsigned long val = 0, num = 0;
+	unsigned long num = 0;
 
 	for (i = 0;i < len;i++)
 	{
