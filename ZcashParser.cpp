@@ -90,7 +90,7 @@ int main()
     	printf("Invalid Block");
     	exit(-1);
     	}
-    fseek(inifile, 0L, SEEK_SET);
+        fseek(inifile, 0L, SEEK_SET);
 	FILE *zblockfile = fopen("blknew.bin", "wb");
 	int num;
 	char temp;
