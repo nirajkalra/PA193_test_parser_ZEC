@@ -92,8 +92,8 @@ int main()
     	}
         fseek(inifile, 0L, SEEK_SET);
 	FILE *zblockfile = fopen("blknew.bin", "wb");
-	int num;
-	char temp;
+	//int num; // unused
+	//char temp;
 	/*while (!feof(inifile))
 	{
 		temp = fgetc(inifile);
