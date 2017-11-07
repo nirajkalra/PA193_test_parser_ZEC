@@ -79,10 +79,18 @@ int main()
 {
 
 	//lOCAL vARIABLES
-	int fpos = 0;
+	int fpos = 0,size_block=0;
 	int bytestoread;
 	struct ZBLOCK  zblock;// = (struct ZBLOCK*) malloc(sizeof(struct ZBLOCK));
 	FILE *inifile = fopen("blk00041_185102.dat", "rb");
+	fseek(inifile, 0L, SEEK_END);  // to check the input legnth of file
+    	size_block = ftell(inifile);
+   	 if (size_block>2000000)
+    	{        
+    	printf("Invalid Block");
+    	exit(-1);
+    	}
+    fseek(inifile, 0L, SEEK_SET);
 	FILE *zblockfile = fopen("blknew.bin", "wb");
 	int num;
 	char temp;
