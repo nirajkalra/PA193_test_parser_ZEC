@@ -5,7 +5,7 @@ CC = g++
 CFLAGS  = -g -Wall
 
 all: sample.cpp
-	g++ -g -Wall -std=c99 -o sample sample.cpp
+	g++ -g -Wall -std=c99 -o Zcash ZcashParser.cpp
 
 clean: 
-	$(RM) sample
+	$(RM) Zcash
