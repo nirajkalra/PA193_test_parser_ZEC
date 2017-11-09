@@ -1,0 +1,3 @@
+testvector.h has a hardcoded value of header fields for the block No 102038
+//source of fileds is taken from https://explorer.zcha.in/
+//Program runs and compares the values of read block with the results and checks functionality of program
