@@ -1,5 +1,5 @@
 #include "zcash.h"
-#include "ZBlock_merkle.cpp"
+#include "ZBlock_Merkle.cpp"
 
 int validatetransaction(char *srcfilename, unsigned char * merklehash)
 {
