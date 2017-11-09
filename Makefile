@@ -5,7 +5,7 @@ CC = g++
 CFLAGS  = -g -Wall
 
 all: sample.cpp
-	g++ -g -Wall -o Zcash test_parser_ZECv2/src/ZcashParser.cpp
+	g++ -g -Wall -o Zcash test_parser_ZECv2/src/ZcashParser.cpp -lcrypto -lm -lssl
 
 clean: 
 	$(RM) Zcash
