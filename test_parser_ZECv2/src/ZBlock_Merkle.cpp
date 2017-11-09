@@ -1,3 +1,4 @@
+// This function takes input transaction and calculates Merkle Hash
 #include "zcash.h"
 
  int Z_SHA256D_Block_Merkle(char *srcfile, unsigned char *merkle2) {
@@ -35,12 +36,12 @@
 		//printf("%d\n", sizeof(InBytes) );
 
 	
-    SHA256_Init(&sha256_pass1);
+    SHA256_Init(&sha256_pass1);  // initializing sha
     
-    SHA256_Update(&sha256_pass1, InBytes, LenInByte);
+    SHA256_Update(&sha256_pass1, InBytes, LenInByte); 
     
     SHA256_Final(merkle1, &sha256_pass1);
-	
+// First hash of transaction is calculation	
 	
     
     SHA256_Init(&sha256_pass2);
