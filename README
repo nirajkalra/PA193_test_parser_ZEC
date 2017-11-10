@@ -1,6 +1,7 @@
 # PA193_test_parser_ZEC
 Test parser for the term Project 
-ZCash cryptocurrecny parser will read the block header after validaing and parse existing field values.
+ZCash cryptocurrecny parser will read the block header after validaing previous hash value and parse existing field values.
+This parser also validades the transaction by calculating Merkle hash.
 
 Folder named "test_parser_ZECv2" contains theree subfolders. src folder is having  source code 
 https://travis-ci.org/nirajkalra/PA193_test_parser_ZEC.svg?branch=master
