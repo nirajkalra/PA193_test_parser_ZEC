@@ -2,5 +2,5 @@
 Test parser for the term Project 
 ZCash cryptocurrecny parser will read the block header after validaing and parse existing field values.
 
-
+Folder named "test_parser_ZECv2" contains theree subfolders. src folder is having  source code 
 https://travis-ci.org/nirajkalra/PA193_test_parser_ZEC.svg?branch=master
